@@ -106,10 +106,8 @@ class CustomerController extends Controller
      * @param  \App\Customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, customer $customer)
     {
-        $customer = Customer::find($id);
-
 
         $validator = Validator::make($request->all(),[ 
             'email' => ['unique:users,email,'.$customer->id],

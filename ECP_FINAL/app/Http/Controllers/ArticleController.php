@@ -100,11 +100,8 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, article $article)
     {
-
-        $article = Article::find($id);
-
 
         $validator = Validator::make($request->all(),[ 
         ]);

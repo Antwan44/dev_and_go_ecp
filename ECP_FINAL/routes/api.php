@@ -27,7 +27,6 @@ Route::group(['middleware' => 'auth:api'], function(){
     Route::resource('users','UserController');
 
     Route::resource('articles', 'ArticleController');
-    //Route::post('articles/{id}','ArticleController@updateArticle'); 
     Route::resource('tasks', 'TaskController');
     Route::resource('customers', 'CustomerController');
     Route::resource('feedbacks', 'FeedbackController');

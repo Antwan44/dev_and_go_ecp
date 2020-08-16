@@ -25,6 +25,8 @@ class Customer extends JsonResource
             'street_name' => $this->street_name,
             'zip_code' => $this->zip_code,
             'city' => $this->city,
+            'lat' => $this->lat,
+            'lng' => $this->lng,
             'route_to_door' => $this->route_to_door,
             'birthday' => $this->birthday,
             'special_note' => $this->special_note,
